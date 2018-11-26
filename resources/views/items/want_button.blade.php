@@ -8,4 +8,4 @@
         {!! Form::hidden('itemCode',$item->code) !!}
         {!! Form::submit('Want it',['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
-@endif    
+@endif

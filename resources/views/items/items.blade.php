@@ -5,7 +5,7 @@
             <div class="col-md-3 col-sm-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading text-center">
-                        <img src="{{ $item->image_url }}" alt="">
+                        <img src="{{ $item->image_url }}" alt="" class="">
                     </div>
                     <div class="panel-body">
                         @if($item->id)
@@ -16,6 +16,7 @@
                         <div class="buttons text-center">
                             @if(Auth::check())
                                 @include('items.want_button',['item'=>$item])
+                                @include('items.have_button',['item'=>$item])
                             @endif
                         </div>
                     </div>
